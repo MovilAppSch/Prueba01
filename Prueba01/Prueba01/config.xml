@@ -1,127 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="io.cordova.myapp551197" versionCode="" version="1.0.0">
-  <name>Prueba01		</name>
-  <description>Un proyecto en blanco que usa Apache Cordova para ayudarle a compilar una aplicaciÃ³n que tiene varias plataformas mÃ³viles como destino: Android, iOS y la plataforma universal de Windows.		</description>
-  <author href="http://cordova.io" email="dev@cordova.apache.org">Damian		</author>
-  <feature name="http://api.phonegap.com/1.0/battery" />
-  <feature name="http://api.phonegap.com/1.0/camera" />
-  <feature name="http://api.phonegap.com/1.0/contacts" />
-  <feature name="http://api.phonegap.com/1.0/file" />
-  <feature name="http://api.phonegap.com/1.0/geolocation" />
-  <feature name="http://api.phonegap.com/1.0/media" />
-  <feature name="http://api.phonegap.com/1.0/network" />
-  <feature name="http://api.phonegap.com/1.0/notification" />
-  <preference name="phonegap-version" value="cli-6.3.0" />
-  <preference name="android-build-tool" value="gradle" />
-  <preference name="orientation" value="default" />
-  <preference name="fullscreen" value="false" />
-  <preference name="target-device" value="universal" />
-  <preference name="webviewbounce" value="true" />
-  <preference name="prerendered-icon" value="false" />
-  <preference name="stay-in-webview" value="true" />
-  <preference name="ios-statusbarstyle" value="default" />
-  <preference name="detect-data-types" value="true" />
-  <preference name="exit-on-suspend" value="true" />
-  <preference name="show-splash-screen-spinner" value="true" />
-  <preference name="auto-hide-splash-screen" value="true" />
-  <preference name="FadeSplashScreen " value="true" />
-  <preference name="EnableViewportScale" value="false" />
-  <preference name="MediaPlaybackRequiresUserAction" value="false" />
-  <preference name="AllowInlineMediaPlayback" value="true" />
-  <preference name="BackupWebStorage" value="none" />
-  <preference name="TopActivityIndicator" value="white" />
-  <preference name="KeyboardDisplayRequiresUserAction" value="true" />
-  <preference name="KeyboardShrinksView " value="true" />
-  <preference name="HideKeyboardFormAccessoryBar" value="true" />
-  <preference name="SuppressesIncrementalRendering" value="false" />
-  <preference name="windows-identity-name" value="" />
-  <preference name="android-minSdkVersion" value="17" />
-  <preference name="android-targetSdkVersion" value="19" />
-  <preference name="android-maxSdkVersion" value="17" />
-  <preference name="android-installLocation" value="auto" />
-  <preference name="SplashScreenDelay" value="2000" />
-  <preference name="ErrorUrl" value="null" />
-  <preference name="BackgroundColor" value="0x000000" />
-  <preference name="DisallowOverscroll" value="true" />
-  <preference name="LoadingDialog" value="," />
-  <preference name="LoadUrlTimeoutValue" value="null" />
-  <platform name="ios">
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-57.png" width="57" height="57" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-72-2x.png" width="144" height="144" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-72.png" width="72" height="72" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-57-2x.png" width="114" height="114" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-50.png" width="50" height="50" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-50-2x.png" width="100" height="100" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-60.png" width="60" height="60" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-60-2x.png" width="120" height="120" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-60-3x.png" width="180" height="180" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-76.png" width="76" height="76" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-76-2x.png" width="152" height="152" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-small.png" width="29" height="29" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-small-2x.png" width="58" height="58" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-40.png" width="40" height="40" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/ios/icon-40-2x.png" width="80" height="80" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/ios/screen-iphone-portrait-736h.png" width="1242" height="2208" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/ios/screen-iphone-landscape-736h.png" width="2208" height="1242" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/ios/screen-iphone-portrait-667h.png" width="750" height="1334" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/ios/screen-iphone-568h-2x.png" width="640" height="1136" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/ios/screen-iphone-portrait-2x.png" width="640" height="960" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/ios/screen-iphone-portrait.png" width="320" height="480" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/ios/screen-ipad-portrait.png" width="768" height="1024" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/ios/screen-ipad-landscape.png" width="1024" height="768" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/ios/screen-ipad-portrait-2x.png" width="1536" height="2048" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/ios/screen-ipad-landscape-2x.png" width="2048" height="1536" />
-  </platform>
-  <platform name="android">
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/android/icon-36-ldpi.png" qualifier="ldpi" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/android/icon-48-mdpi.png" qualifier="mdpi" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/android/icon-72-hdpi.png" qualifier="hdpi" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/icons/android/icon-96-xhdpi.png" qualifier="xhdpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/android/screen-ldpi-portrait.png" qualifier="port-ldpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/android/screen-ldpi-landscape.png" qualifier="land-ldpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/android/screen-mdpi-portrait.png" qualifier="port-mdpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/android/screen-mdpi-landscape.png" qualifier="land-mdpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/android/screen-hdpi-portrait.png" qualifier="port-hdpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/android/screen-hdpi-landscape.png" qualifier="land-hdpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/android/screen-xhdpi-portrait.png" qualifier="port-xhdpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\Prueba01\config.xmlres/screens/android/screen-xhdpi-landscape.png" qualifier="land-xhdpi" />
-  </platform>
-  <platform name="winphone"></platform>
-  <icon src="icon.png" />
-  <allow-intent href="http://*/*" />
-  <allow-intent href="https://*/*" />
-  <allow-intent href="tel:*" />
-  <allow-intent href="sms:*" />
-  <allow-intent href="mailto:*" />
-  <allow-intent href="geo:*" />
-  <platform name="android">
-    <allow-intent href="market:*" />
-  </platform>
-  <platform name="ios">
-    <allow-intent href="itms:*" />
-  </platform>
-  <platform name="ios">
-    <allow-intent href="itms-apps:*" />
-  </platform>
-  <allow-intent href="http://*/*" />
-  <allow-intent href="https://*/*" />
-  <allow-intent href="tel:*" />
-  <allow-intent href="sms:*" />
-  <allow-intent href="mailto:*" />
-  <allow-intent href="geo:*" />
-  <platform name="android">
-    <allow-intent href="market:*" />
-  </platform>
-  <platform name="ios">
-    <allow-intent href="itms:*" />
-  </platform>
-  <platform name="ios">
-    <allow-intent href="itms-apps:*" />
-  </platform>
-  <vs:toolsetVersion xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps">6.3.1</vs:toolsetVersion>
-  <engine name="android" spec="5.2.1" />
-  <engine name="ios" spec="4.2.0" />
-  <engine name="windows" spec="4.4.2" />
-  <content src="index.html" />
-  <preference name="windows-target-version" value="10.0" />
-</widget>
+		<?xml version="1.0" encoding="UTF-8"?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		xmlns:android = "http://schemas.android.com/apk/res/android"
+		id        = "Movile01"
+		versionCode=""
+		version   = "">
+		<name>Movile01		</name>
+		<description>		</description>
+		<author href="" email="">		</author>
+		<feature name="http://api.phonegap.com/1.0/battery" />
+		<feature name="http://api.phonegap.com/1.0/camera" />
+		<feature name="http://api.phonegap.com/1.0/contacts" />
+		<feature name="http://api.phonegap.com/1.0/file" />
+		<feature name="http://api.phonegap.com/1.0/geolocation" />
+		<feature name="http://api.phonegap.com/1.0/media" />
+		<feature name="http://api.phonegap.com/1.0/network" />
+		<feature name="http://api.phonegap.com/1.0/notification" />
+		<preference name="phonegap-version" value="cli-6.3.0" />
+		<preference name="android-build-tool" value="gradle" />
+		<preference name="orientation" value="default" />
+		<preference name="fullscreen" value="false" />
+		<preference name="target-device" value="universal" />
+		<preference name="webviewbounce" value="true" />
+		<preference name="prerendered-icon" value="false" />
+		<preference name="stay-in-webview" value="true" />
+		<preference name="ios-statusbarstyle" value="default" />
+		<preference name="detect-data-types" value="true" />
+		<preference name="exit-on-suspend" value="true" />
+		<preference name="show-splash-screen-spinner" value="true" />
+		<preference name="auto-hide-splash-screen" value="true" />
+		<preference name="FadeSplashScreen " value="true" />
+		<preference name="EnableViewportScale" value="false" />
+		<preference name="MediaPlaybackRequiresUserAction" value="false" />
+		<preference name="AllowInlineMediaPlayback" value="true" />
+		<preference name="BackupWebStorage" value="none" />
+		<preference name="TopActivityIndicator" value="white" />
+		<preference name="KeyboardDisplayRequiresUserAction" value="true" />
+		<preference name="KeyboardShrinksView " value="true" />
+		<preference name="HideKeyboardFormAccessoryBar" value="true" />
+		<preference name="SuppressesIncrementalRendering" value="false" />
+		<preference name="windows-identity-name" value="" />
+		<preference name="android-minSdkVersion" value="17" />
+		<preference name="android-targetSdkVersion" value="17" />
+		<preference name="android-maxSdkVersion" value="9" />
+		<preference name="android-installLocation" value="auto" />
+		<preference name="SplashScreenDelay" value="2000" />
+		<preference name="ErrorUrl" value="null" />
+		<preference name="BackgroundColor" value="0x000000" />
+		<preference name="DisallowOverscroll" value="true" />
+		<preference name="LoadingDialog" value="," />
+		<preference name="LoadUrlTimeoutValue" value="null" />
+		<platform name="ios">
+		</platform>
+		<platform name="android">
+		</platform>
+		<platform name="winphone">
+		</platform>
+		 <icon src="icon.png" />
+		</widget>
