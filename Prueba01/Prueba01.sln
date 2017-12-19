@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Prueba01", "Prueba01\Prueba01.jsproj", "{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}"
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Prueba01", "Prueba01.jsproj", "{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,41 +19,41 @@ Global
 		Release|Windows-x86 = Release|Windows-x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|Android.ActiveCfg = Debug|Android
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|Android.Build.0 = Debug|Android
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|Android.Deploy.0 = Debug|Android
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|iOS.ActiveCfg = Debug|iOS
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|iOS.Build.0 = Debug|iOS
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|iOS.Deploy.0 = Debug|iOS
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|Windows-ARM.ActiveCfg = Debug|Windows-ARM
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|Windows-ARM.Build.0 = Debug|Windows-ARM
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|Windows-ARM.Deploy.0 = Debug|Windows-ARM
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|Windows-x64.ActiveCfg = Debug|Windows-x64
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|Windows-x64.Build.0 = Debug|Windows-x64
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|Windows-x64.Deploy.0 = Debug|Windows-x64
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|Windows-x86.ActiveCfg = Debug|Windows-x86
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|Windows-x86.Build.0 = Debug|Windows-x86
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Debug|Windows-x86.Deploy.0 = Debug|Windows-x86
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|Android.ActiveCfg = Release|Android
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|Android.Build.0 = Release|Android
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|Android.Deploy.0 = Release|Android
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|iOS.ActiveCfg = Release|iOS
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|iOS.Build.0 = Release|iOS
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|iOS.Deploy.0 = Release|iOS
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|Windows-ARM.ActiveCfg = Release|Windows-ARM
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|Windows-ARM.Build.0 = Release|Windows-ARM
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|Windows-ARM.Deploy.0 = Release|Windows-ARM
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|Windows-x64.ActiveCfg = Release|Windows-x64
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|Windows-x64.Build.0 = Release|Windows-x64
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|Windows-x64.Deploy.0 = Release|Windows-x64
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|Windows-x86.ActiveCfg = Release|Windows-x86
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|Windows-x86.Build.0 = Release|Windows-x86
-		{C3B506B3-5828-40A0-89F4-65D3D1F0D0E0}.Release|Windows-x86.Deploy.0 = Release|Windows-x86
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|Android.ActiveCfg = Debug|Android
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|Android.Build.0 = Debug|Android
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|Android.Deploy.0 = Debug|Android
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|iOS.ActiveCfg = Debug|iOS
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|iOS.Build.0 = Debug|iOS
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|iOS.Deploy.0 = Debug|iOS
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|Windows-ARM.ActiveCfg = Debug|Windows-ARM
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|Windows-ARM.Build.0 = Debug|Windows-ARM
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|Windows-ARM.Deploy.0 = Debug|Windows-ARM
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|Windows-x64.ActiveCfg = Debug|Windows-x64
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|Windows-x64.Build.0 = Debug|Windows-x64
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|Windows-x64.Deploy.0 = Debug|Windows-x64
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|Windows-x86.ActiveCfg = Debug|Windows-x86
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|Windows-x86.Build.0 = Debug|Windows-x86
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Debug|Windows-x86.Deploy.0 = Debug|Windows-x86
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|Android.ActiveCfg = Release|Android
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|Android.Build.0 = Release|Android
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|Android.Deploy.0 = Release|Android
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|iOS.ActiveCfg = Release|iOS
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|iOS.Build.0 = Release|iOS
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|iOS.Deploy.0 = Release|iOS
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|Windows-ARM.ActiveCfg = Release|Windows-ARM
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|Windows-ARM.Build.0 = Release|Windows-ARM
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|Windows-ARM.Deploy.0 = Release|Windows-ARM
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|Windows-x64.ActiveCfg = Release|Windows-x64
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|Windows-x64.Build.0 = Release|Windows-x64
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|Windows-x64.Deploy.0 = Release|Windows-x64
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|Windows-x86.ActiveCfg = Release|Windows-x86
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|Windows-x86.Build.0 = Release|Windows-x86
+		{A32A0FB1-F571-457C-866E-2CD4A08D1FC3}.Release|Windows-x86.Deploy.0 = Release|Windows-x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {63512ED7-9FEE-48A7-B305-53532E9E2979}
+		SolutionGuid = {170BF680-739F-4505-8C5D-ED6C0B6EF035}
 	EndGlobalSection
 EndGlobal
