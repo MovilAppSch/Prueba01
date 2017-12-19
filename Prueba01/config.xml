@@ -1,15 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<widget
-  xmlns="http://www.w3.org/ns/widgets" 
-  xmlns:gap="http://phonegap.com/ns/1.0"
-  xmlns:android="http://schemas.android.com/apk/res/android" 
-  id="io.cordova.myappe7d0da" 
-  versionCode="1" 
-  version="1.0.0">
-  <content src="index.html" />
-  <name>PruebaApp</name>
-  <description>Un proyecto en blanco que usa Apache Cordova para ayudarle a compilar una aplicaciÃ³n que tiene varias plataformas mÃ³viles como destino: Android, iOS y la plataforma universal de Windows.		</description>
-  <author href="http://cordova.io" email="dev@cordova.apache.org">Dam</author>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+xmlns:gap = "http://phonegap.com/ns/1.0"
+xmlns:android = "http://schemas.android.com/apk/res/android"
+id        = "Movile01"
+versionCode=""
+version   = "">
+  <name>Movile01		</name>
+  <description>		</description>
+  <author href="" email="">		</author>
+  <feature name="http://api.phonegap.com/1.0/battery" />
+  <feature name="http://api.phonegap.com/1.0/camera" />
+  <feature name="http://api.phonegap.com/1.0/contacts" />
+  <feature name="http://api.phonegap.com/1.0/file" />
+  <feature name="http://api.phonegap.com/1.0/geolocation" />
+  <feature name="http://api.phonegap.com/1.0/media" />
+  <feature name="http://api.phonegap.com/1.0/network" />
+  <feature name="http://api.phonegap.com/1.0/notification" />
   <preference name="phonegap-version" value="cli-6.3.0" />
   <preference name="android-build-tool" value="gradle" />
   <preference name="orientation" value="default" />
@@ -36,7 +42,7 @@
   <preference name="windows-identity-name" value="" />
   <preference name="android-minSdkVersion" value="17" />
   <preference name="android-targetSdkVersion" value="17" />
-  <preference name="android-maxSdkVersion" value="23" />
+  <preference name="android-maxSdkVersion" value="9" />
   <preference name="android-installLocation" value="auto" />
   <preference name="SplashScreenDelay" value="2000" />
   <preference name="ErrorUrl" value="null" />
@@ -44,28 +50,15 @@
   <preference name="DisallowOverscroll" value="true" />
   <preference name="LoadingDialog" value="," />
   <preference name="LoadUrlTimeoutValue" value="null" />
+  <platform name="ios">
+
+  </platform>
   <platform name="android">
-    <!--<icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\config.xmlres/icons/android/icon-36-ldpi.png" qualifier="ldpi" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\config.xmlres/icons/android/icon-48-mdpi.png" qualifier="mdpi" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\config.xmlres/icons/android/icon-72-hdpi.png" qualifier="hdpi" />
-    <icon src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\config.xmlres/icons/android/icon-96-xhdpi.png" qualifier="xhdpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\config.xmlres/screens/android/screen-ldpi-portrait.png" qualifier="port-ldpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\config.xmlres/screens/android/screen-ldpi-landscape.png" qualifier="land-ldpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\config.xmlres/screens/android/screen-mdpi-portrait.png" qualifier="port-mdpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\config.xmlres/screens/android/screen-mdpi-landscape.png" qualifier="land-mdpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\config.xmlres/screens/android/screen-hdpi-portrait.png" qualifier="port-hdpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\config.xmlres/screens/android/screen-hdpi-landscape.png" qualifier="land-hdpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\config.xmlres/screens/android/screen-xhdpi-portrait.png" qualifier="port-xhdpi" />
-    <splash src="C:\Users\ELIAS DESKTOP\source\repos\Prueba01\Prueba01\config.xmlres/screens/android/screen-xhdpi-landscape.png" qualifier="land-xhdpi" />-->
+
+  </platform>
+  <platform name="winphone">
+
   </platform>
   <icon src="icon.png" />
-  <platform name="android">
-    <allow-intent href="market:*" />
-  </platform>
-  <vs:toolsetVersion xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps">6.3.1</vs:toolsetVersion>
-  <engine name="android" spec="5.2.1" />
-  <engine name="ios" spec="4.2.0" />
-  <engine name="windows" spec="4.4.2" />
-  <preference name="windows-target-version" value="10.0" />
-  <plugin name="cordova-plugin-whitelist" spec="~1.2.2" />
+
 </widget>
