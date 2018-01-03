@@ -1,82 +1,68 @@
-<!DOCTYPE html>
-<html>
-
+﻿<!DOCTYPE html>
+<html ng-app="MyFirstApp">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <title>PGDay EU 2017 Chat App</title>
-  
-  <!-- Scripts -->
-  <script src="cordova.js"></script>
-  <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.0.11.min.js"></script>
-  <script src="js/lib/framework7.min.js"></script>
-  <script src="js/lib/vue.min.js"></script>
-  <script src="js/lib/framework7-vue.min.js"></script>
-  <script src="js/app.js"></script>
-  <!-- End scripts -->
-  
-  <!-- Styles -->
-  <script>
-      if (Framework7.prototype.device.android) {
-          document.write(
-            '<link rel="stylesheet" href="css/framework7.material.min.css">' +
-            '<link rel="stylesheet" href="css/framework7.material.colors.min.css">'
-          );
-      }
-      else {
-        document.write(
-          '<link rel="stylesheet" href="css/framework7.ios.min.css">' +
-          '<link rel="stylesheet" href="css/framework7.ios.colors.min.css">'
-        );
-      }
-  </script>
-  <link rel="stylesheet" href="css/app.css">
-  <!-- End styles -->
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/AppAngular.js"></script>
 </head>
-
-<body>
-  <div id="app">
-    <!-- Statusbar -->
-    <!-- NOTE: You may need to comment out the next line depending on what device you're running on and see the app title cut off -->
-    <f7-statusbar></f7-statusbar>
-
-    <!-- Main Views -->
-    <f7-views>
-      <f7-view id="main-view" navbar-through :dynamic-navbar="true" main>
-
-        <!-- Navbar -->
-        <f7-navbar back-link="Back" sliding>
-          <f7-nav-center sliding>PGDay EU 2017</f7-nav-center>
-        </f7-navbar>
-
-        <!-- Pages -->
-        <f7-pages>
-          <f7-page>
-            <f7-block-title>Easy Chat</f7-block-title>
-            <f7-list>
-              <f7-list-item>
-                <f7-input @keyup.enter="enterChat" type="text" placeholder="Your name" v-model:value="name" />
-              </f7-list-item>
-              <f7-list-button v-on:click="enterChat">Enter chat</f7-list-button>
-            </f7-list>
-          </f7-page>
-        </f7-pages>
-      </f7-view>
-    </f7-views>
-  </div>
-
-  <!-- Chat Page Template -->
-  <template id="page-chat">
-    <f7-page>
-      <f7-messages>
-        <f7-message v-for="msg in msgs" :name="msg.name" :text="msg.text" :type="msg.type"></f7-message>
-      </f7-messages>
-      <f7-messagebar placeholder="Message" send-link="Send" v-on:submit="onSend"></f7-messagebar>
-    </f7-page>
-  </template>
-
+<body ng-controller="FirstController" ng-init="initFirst();">
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Mensajes Libres</h1>
+        </div>
+        <div style="width: 100%; height: 400px; overflow: auto">
+            <table data-role="table" id="movie-table" data-filter="true" data-input="#filterTable-input" class="ui-responsive">
+                <thead>
+                    <tr>
+                        <td>
+                            <b>MessageID</b>
+                        </td>
+                        <td>
+                            <b>Descripcion</b>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="post in posts | orderBy:'-MessageID'">
+                        <td>
+                            {{post.MessageID}}
+                        </td>
+                        <td>
+                            {{post.Descripcion}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br />
+        <form>
+            <table>
+                <thead>
+                    <tr>
+                        <td width="500">
+                            <input type="text" name="name" class="form-control" ng-model="datos" placeholder="escribi tu msj">
+                        </td>
+                        <td>
+                            <button ng-click="SendData()" type="button" class="btn btn-success">Enviar</button>
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </form>
+        <div data-role="footer">
+            <div data-role="navbar" data-type="horizontal">
+                <ul>
+                    <li><a href="#" data-icon="grid">Menu</a></li>
+                    <li><a href="#" data-icon="star">Favorites</a></li>
+                    <li><a href="#" data-icon="gear">Tools</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="highlight"> </div>
 </body>
-
 </html>

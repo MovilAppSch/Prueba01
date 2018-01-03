@@ -10,32 +10,33 @@ function metodo($scope, $http, $interval) {
 
     $scope.initFirst = function () {
 
-        $http.get("http://localhost:49762/api/MessagesApi").then(successGet, errorGet)
+        $http.get("http://Gestion1Prueba.somee.com/api/MessagesApi/").then(successGet, errorGet)
 
-        function successGet(GetData) {         
-                console.log(GetData);
-                $scope.posts = GetData.data;
+        function successGet(GetData) {
+            console.log(GetData.data);
+            $scope.posts = GetData.data;
         }
         function errorGet(erro) {
             console.log(erro);
         }
     }
 
-    $interval($scope.initFirst, 1000);  
+    $interval($scope.initFirst, 1000);
 
     /////////////////post///////////////////
     $scope.SendData = function () {
         $http({
             method: 'POST',
-            url: 'http://localhost:49762/api/MessagesApi',
+            url: 'http://Gestion1Prueba.somee.com/api/MessagesApi/',
             dataType: "json",
             data: { 'Descripcion': $scope.datos },
             cache: false,
-        }).then(function (PostData) {
-            console.log(PostData);
-        },
-            function (erro) {
-                alert(erro.data);
+        })
+            .then(function (PostData) {
+                alert(GetData.data.Descripcion);
+            }
+            , function (erro) {
+              //  alert(erro.data);
             })
     }
 }
