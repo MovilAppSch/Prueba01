@@ -4,33 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+    <link href="css/MiEstilo.css" rel="stylesheet" />
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/AppAngular.js"></script>
+    <script src="js/PushNotification.js"></script>
 </head>
 <body ng-controller="FirstController" ng-init="initFirst();">
     <div data-role="page">
+        <div data-role="panel" id="panel" data-position="fixed" data-theme="true" data-display="push"></div>
         <div data-role="header">
+            <a data-iconpos="notext" data-role="button" data-icon="home" title="Home">Home</a>
             <h1>Mensajes Libres</h1>
+            <a data-iconpos="notext" data-role="button" data-icon="flat-menu"></a>
         </div>
-        <div style="width: 100%; height: 400px; overflow: auto">
-            <table data-role="table" id="movie-table" data-filter="true" data-input="#filterTable-input" class="ui-responsive">
-                <thead>
-                    <tr>
-                        <td>
-                           <!-- <b>Usuario</b>-->
-                        </td>
-                        <td>
-                            <b><!--Mensaje--></b>
-                        </td>
-                    </tr>
-                </thead>
+        <div style="width: 100%; height: 475px; overflow: auto">
+            <table data-role="table" data-filter="true" data-input="#filterTable-input" class="ui-table">
+                <thead><tr></tr></thead>
                 <tbody>
                     <tr ng-repeat="post in posts | orderBy:'-MessageID'">
-                        <td>
-
-                        </td>
                         <td>
                             {{post.Descripcion}}
                         </td>
@@ -38,21 +31,11 @@
                 </tbody>
             </table>
         </div>
-        <form>
-            <table>
-                <thead>
-                    <tr>
-                        <td width="500">
-                            <input type="text" name="name" class="form-control" ng-model="datos" placeholder="escribi tu msj">
-                        </td>
-                        <td>
-                            <button ng-click="SendData()" type="button" class="btn ui-body-d">Enviar</button>
-                        </td>
-                    </tr>
-                </thead>
-            </table>
-        </form>
+        <br />
+        <div data-role="controlgroup">
+            <input type="text" ng-model="datos" placeholder="Escribe tu mensaje">
+            <button ng-click="SendData()" type="button" data-icon="flat-mail" data-theme="b" data-inline="true">Enviar</button>
+        </div>
     </div>
-    <div id="highlight"> </div>
 </body>
 </html>
