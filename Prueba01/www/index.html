@@ -19,17 +19,17 @@
                 <thead>
                     <tr>
                         <td>
-                            <b>MessageID</b>
+                           <!-- <b>Usuario</b>-->
                         </td>
                         <td>
-                            <b>Descripcion</b>
+                            <b><!--Mensaje--></b>
                         </td>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="post in posts | orderBy:'-MessageID'">
                         <td>
-                            {{post.MessageID}}
+
                         </td>
                         <td>
                             {{post.Descripcion}}
@@ -38,7 +38,6 @@
                 </tbody>
             </table>
         </div>
-        <br />
         <form>
             <table>
                 <thead>
@@ -47,21 +46,12 @@
                             <input type="text" name="name" class="form-control" ng-model="datos" placeholder="escribi tu msj">
                         </td>
                         <td>
-                            <button ng-click="SendData()" type="button" class="btn btn-success">Enviar</button>
+                            <button ng-click="SendData()" type="button" class="btn ui-body-d">Enviar</button>
                         </td>
                     </tr>
                 </thead>
             </table>
         </form>
-        <div data-role="footer">
-            <div data-role="navbar" data-type="horizontal">
-                <ul>
-                    <li><a href="#" data-icon="grid">Menu</a></li>
-                    <li><a href="#" data-icon="star">Favorites</a></li>
-                    <li><a href="#" data-icon="gear">Tools</a></li>
-                </ul>
-            </div>
-        </div>
     </div>
     <div id="highlight"> </div>
 </body>
