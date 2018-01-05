@@ -11,25 +11,25 @@ function metodo($scope, $http, $interval) {
     $scope.datos = "";
     var d = new Date();
     var g = d.getHours() + " : " + d.getMinutes() + " : " + d.getSeconds();
-    $scope.nombreUsuario = prompt("Ingrese su nombre", "");
+    // $scope.nombreUsuario = prompt("Ingrese su nombre", "");
 
     $scope.initFirst = function () {
+            $http.get("http://Gestion1Prueba.somee.com/api/MessagesApi/").then(successGet, errorGet)
 
-        $http.get("http://Gestion1Prueba.somee.com/api/MessagesApi/").then(successGet, errorGet)
-
-        function successGet(GetData) {
-            //console.log(GetData.data);
-            $scope.posts = GetData.data;
+            function successGet(GetData) {
+                //console.log(GetData.data);
+                $scope.posts = GetData.data;
+            }
+            function errorGet(erro) {
+                console.log(erro);
+            }
         }
-        function errorGet(erro) {
-            console.log(erro);
-        }
-    }
 
     $interval($scope.initFirst, 1000);
 
     /////////////////post///////////////////
     $scope.SendData = function () {
+        if ($scope.datos != "") {
         $http({
             method: 'POST',
             url: 'http://Gestion1Prueba.somee.com/api/MessagesApi/',
@@ -44,6 +44,10 @@ function metodo($scope, $http, $interval) {
                 //alert(erro.data);
             })
         $scope.datos = "";
+        }
+        else {
+            alert("Ingrese un texto");
+        }
     }
 }
 
