@@ -1,44 +1,72 @@
 ﻿<!DOCTYPE html>
-<html ng-app="MyFirstApp">
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
-    <link href="css/MiEstilo.css" rel="stylesheet" />
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/AppAngular.js"></script>
+    <!--
+        Personalice la directiva de seguridad de contenido en la etiqueta meta como sea necesario. Agregue "unsafe-inline" a default-src para permitir JavaScript insertado.
+        Para obtener más detalles, consulte http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <title>Mensajes</title>
 </head>
-<body ng-controller="FirstController" ng-init="initFirst();">
-    <div data-role="navbar">
-        <ul>
-            <li><a href="#" class="ui-btn-active">Chat</a></li>
-            <li><a href="#">Config</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-    </div><!-- /navbar -->
-    <div style="width: 100%; height: 475px; overflow: auto">
-        <table data-role="table" data-filter="true" data-input="#filterTable-input" class="ui-table">
-            <thead><tr></tr></thead>
-            <tbody>
-                <tr ng-repeat="post in posts | orderBy:'-MessageID'">
-                    <td>
-                        {{post.Descripcion}}
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+<body>
+    <!--Pagina1-->
+    <div data-role="page" id="pagina1">
+        <div data-role="header">
+            <h2>Mi primera App</h2>
+        </div>
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="home"></a></li>
+                <li><a href="#pagina2"  data-transition="none" data-icon="grid"></a></li>
+            </ul>
+        </div>
+
+        <div data-role="content">
+            <input  type="text" id="txtNombre"/>
+            <button id="btnBuscar">Buscar</button>
+            <div id="divResultado"></div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h3>Tutorial Apache Cordova</h3>
+        </div>
     </div>
-    <table>
-        <tr>
-            <td width="400">
-                <input type="text" ng-model="datos" class="validate" placeholder="Escribe tu msj">
-            </td>
-            <td>
-                <button ng-click="SendData()" type="button" data-role="button" data-theme="b">Enviar</button>
-            </td>
-        </tr>
-    </table>
+
+    <!--Pagina2-->
+    <div data-role="page" id="pagina2">
+        <div data-role="header">
+            <h2>Mi primera App</h2>
+        </div>
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#pagina1" data-transition="none" data-icon="home"></a></li>
+                <li><a href="#" data-icon="grid"></a></li>
+            </ul>
+        </div>
+
+        <div data-role="content">
+            <button id="btnCargar">Cargar Lista</button>
+            <div id="divLista"></div>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h3>Tutorial Apache Cordova</h3>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script src="scripts/jquery-2.2.3.min.js"></script>
+    <script src="scripts/jquery.mobile-1.4.5.js"></script>
 </body>
 </html>
