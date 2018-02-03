@@ -14,7 +14,16 @@
         document.addEventListener( 'pause', onPause.bind( this ), false );
         document.addEventListener('resume', onResume.bind(this), false);
         // TODO: Cordova se ha cargado. Haga aquí las inicializaciones que necesiten Cordova.
-
+        new $.nd2Search({
+            placeholder: "Buscar",   // Placeholder in the search field
+            defaultIcon: "globe-alt",  // optional: icon | null
+            source: [{ label: 'Displayed Value', value: 'real-value', icon: 'custom-icon' }],   // autocomplete : option-source
+            fn: function (result) { // this function will be executed when a valid result item is selected
+                console.log('--- Your custom handling ---');
+                console.log('you picked: ');
+                console.log(result);
+            }
+        });
     };
     function onPause() {
         // TODO: esta aplicación se ha suspendido. Guarde el estado de la aplicación aquí.

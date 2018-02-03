@@ -73,22 +73,10 @@
                 </div>
             </div>
         </div>
-        <script>
-            new $#nd2Search({
-                placeholder: "Buscar",   // Placeholder in the search field
-                defaultIcon: "globe-alt",  // optional: icon | null
-                source: [{ label: 'Displayed Value', value: 'real-value', icon: 'custom-icon' }],   // autocomplete : option-source
-                fn: function (result) { // this function will be executed when a valid result item is selected
-                    console.log('--- Your custom handling ---');
-                    console.log('you picked: ');
-                    console.log(result);
-                }
-            });
-        </script>
         <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
             <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>
             <a href="#leftpanel1" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
-            <h1 class="wow fadeIn" data-wow-delay='0.4s' id="nd2Search">Usuarios</h1>
+            <h1 class="wow fadeIn" data-wow-delay='0.4s'>Usuarios</h1>
         </div>
 
         <div role="main" class="ui-content" data-inset="false">
